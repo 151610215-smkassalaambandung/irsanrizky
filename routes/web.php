@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('testmodel', function () {
+	$q= App\Post::all();
+    return $q;
+});
+Route::get('produk', function () {
+	$a= App\produk::all();
+	$b= App\pengguna::all();
+	$c= App\pengaturan::all();
+    return $a.'<br>'.$b.'<br>'.$c;
+});
+
