@@ -49,22 +49,37 @@ class Mycontroller extends Controller
     	return view ('buah', compact('buah'));
     }
 
-            public function percobaan7()
+            public function percobaan7($id)
     {
     	
-    	$buah =['Mangga','Jeruk','Apel','Anggur','Manggis'];
-    	$makhluk=['gajah','jerapah','buaya','semut','elang'];
-    	$komputer=['apple','hp','acer','samsung','asus'];
-    	return view ('latihan.latihan', compact('buah','makhluk','komputer'));
+    	$pilihan =['buah'=>['Mangga','Jeruk','Apel','Anggur','Manggis'],
+    	   'makhluk'=>['gajah','jerapah','kucing','semut','elang'],
+    	   'komputer'=>['apple','hp','acer','samsung','asus']];
+
+        $ubed=$pilihan[$id];
+
+    	return view ('latihan.latihan', compact('ubed','id'));
     }
 
-    public function percobaan7($buah)
+
+     public function percobaan8($pilih,$jenis)
     {
-    	
-    	$buah =['Mangga','Jeruk','Apel','Anggur','Manggis'];
-    	dd($buah);
-    	return view ('latihan.latihan', compact('buah'));
-	}
+        
+        $satwa=['binatang'=>['elang'=>['jawa','mongol','rajawali'],
+                'semut'=>['jawa','tanah','kalimantan'],
+                'kucing'=>['jawa','persia','anggora'],
+
+        'buah'     =>['Mangga'=>['jawa','mongol','rajawali'],
+                'Manggis'=>['jawa','jabar','kalimantan'],
+                'jeruk'=>['jawa','persia','mandarin'],
+
+        'komputer'=>['acer'=>['456R','2','0'],
+                'semut'=>['645F','6','12'],
+                'kucing'=>['65435S','4','43']]];
+           
+        
+        $jac=$satwa[$pilih];
+        return view ('param', compact('pilih','jac','binatang'));
+    }
+  
 }
-
-

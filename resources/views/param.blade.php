@@ -5,13 +5,17 @@
 </head>
 <body>
 
-		Daftar :{{$id}}
+
+		Daftar : <b>{{$pil}} {{$jenis}}</b>
 		<br>
 		<br>
 
-		@foreach($ubed as $data)
-			{{$data}}<hr>
+		@foreach($jac as $jk)
+			{{$jk}}
+			
+			<hr>
 		@endforeach	
+	
 	
 </body>
 </html>
