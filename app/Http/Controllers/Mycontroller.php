@@ -49,37 +49,40 @@ class Mycontroller extends Controller
     	return view ('buah', compact('buah'));
     }
 
-            public function percobaan7($id)
-    {
+    //         public function percobaan7($id)
+    // {
     	
-    	$pilihan =['buah'=>['Mangga','Jeruk','Apel','Anggur','Manggis'],
-    	   'makhluk'=>['gajah','jerapah','kucing','semut','elang'],
-    	   'komputer'=>['apple','hp','acer','samsung','asus']];
+    // 	$pilihan =['buah'=>['Mangga','Jeruk','Apel','Anggur','Manggis'];
+    // 	   'makhluk'=>['gajah','jerapah','kucing','semut','elang'];,
+    // 	   'komputer'=>['apple','hp','acer','samsung','asus'));
 
-        $ubed=$pilihan[$id];
-
-    	return view ('latihan.latihan', compact('ubed','id'));
-    }
+    // 	return view ('latihan.latihan', compact('ubed','id'));
+    // }
 
 
-     public function percobaan8($pilih,$jenis)
-    {
+//      public function percobaan8($data,$data2 =null)
+//     {
         
-        $satwa=['binatang'=>['elang'=>['jawa','mongol','rajawali'],
-                'semut'=>['jawa','tanah','kalimantan'],
-                'kucing'=>['jawa','persia','anggora'],
+//         $array= array ('binatang'=>['elang'=>['jawa','mongol','rajawali'],
+//                 'Semut'=>   ['jawa','tanah','kalimantan'],
+//                 'Kucing'=>  ['jawa','persia','anggora']],
 
-        'buah'     =>['Mangga'=>['jawa','mongol','rajawali'],
-                'Manggis'=>['jawa','jabar','kalimantan'],
-                'jeruk'=>['jawa','persia','mandarin'],
+//                 'buah'=>    ['Mangga'=>['jawa','mongol','rajawali'],
+//                 'Manggis'=> ['jawa','jabar','kalimantan'],
+//                 'Jeruk'=>   ['jawa','persia','mandarin']],
 
-        'komputer'=>['acer'=>['456R','2','0'],
-                'semut'=>['645F','6','12'],
-                'kucing'=>['65435S','4','43']]];
-           
-        
-        $jac=$satwa[$pilih];
-        return view ('param', compact('pilih','jac','binatang'));
-    }
+//                 'komputer'=>['Acer'=>['456R','2','0'],
+//                 'Dell'=>    ['645F','6','12'],
+//                 'Asus'=>    ['65435S','4','43']]
+//                 );
+
+//               if($data){
+//                 $query = (array_keys($array[$data])); 
+//                 } 
+//                if($data2){
+//                 $query = ($array[$data][$data2]);
+//                }  
+//         return view ('param', compact('query','data','data2'));
+//     }
   
-}
+// }

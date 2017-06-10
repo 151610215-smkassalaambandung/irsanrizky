@@ -6,14 +6,12 @@
 <body>
 
 
-		Daftar : <b>{{$pil}} {{$jenis}}</b>
-		<br>
+		Daftar : <b>{{$data}} {{$data2}}</b>
 		<br>
 
-		@foreach($jac as $jk)
-			{{$jk}}
+		@foreach($query as $jk)
+			<li>{{$jk}}</li>
 			
-			<hr>
 		@endforeach	
 	
 	
